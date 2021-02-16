@@ -56,6 +56,10 @@ a {
   margin-right: 0;
 }
 
+#navbar {
+  display: none;
+}
+
 .header-menu {
   width: 100%;
   background-color: blue;
@@ -71,6 +75,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header-menu .header-bottom h3 {
+  display: none;
 }
 
 .header-bottom__left h3 {
@@ -97,6 +105,10 @@ a {
   background-color: #fff;
   border-radius: 50%;
   padding: 8px 12px 8px 12px;
+}
+
+.header-bottom__right #hamburger {
+  display: none;
 }
 
 .carousel-control-prev:hover {
@@ -454,7 +466,7 @@ a {
   color: #585858;
 }
 
-@media screen and (min-width: 982px) {
+@media screen and (max-width: 982px) {
   .container {
     width: 100;
     max-width: 960px;
@@ -462,6 +474,9 @@ a {
     margin: 0 auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  #navbar {
+    display: none;
   }
   .lorem-section-bloks {
     padding: 40px 15px;
@@ -501,7 +516,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 720px;
     padding: 0 15px;
@@ -509,6 +524,9 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
+  }
+  #navbar {
+    display: none;
   }
   .header-bottom__left .header-bottom-link {
     font-size: 18px;

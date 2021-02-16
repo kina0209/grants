@@ -52,7 +52,9 @@ a {
 }
 
 
-
+#navbar{
+  display: none;
+}
 
 
 .header-menu {
@@ -63,6 +65,9 @@ a {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    h3{
+      display: none;
+    }
   }
 }
 
@@ -92,6 +97,9 @@ a {
     background-color: #fff;
     border-radius: 50%;
     padding: 8px 12px 8px 12px;
+  }
+  #hamburger{
+    display: none;
   }
 }
 
@@ -446,13 +454,16 @@ a {
 
 //   Mobilashuv qismi boshlandi     //
 
-@media screen and (min-width: 982px) {
+@media screen and (max-width: 982px) {
   .container {
     width: 100;
     max-width: 960px;
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+  #navbar{
+    display: none;
   }
 
   .lorem-section-bloks {
@@ -515,13 +526,16 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 720px;
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
     width: 100%;
+  }
+  #navbar{
+    display: none;
   }
 
   .header-bottom__left {
