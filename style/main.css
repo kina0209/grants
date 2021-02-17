@@ -763,6 +763,9 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+  .lorem-section-bloks .lorem-block {
+    margin-bottom: 25px;
+  }
   .students {
     padding: 30px 0;
   }
@@ -790,7 +793,7 @@ a {
     font-size: 25px;
   }
   .section-form {
-    padding: 25px 0;
+    padding: 45px 0;
   }
   .section-form .input-name {
     max-width: 250px;
@@ -818,7 +821,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 25px 15px 0 15px;
+    padding: 35px 15px 0 15px;
   }
   .footer .container .footer-top_block1 {
     margin-bottom: 40px;
