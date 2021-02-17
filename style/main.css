@@ -9,6 +9,23 @@ a {
   text-decoration: none;
 }
 
+#angel-right {
+  color: #fff;
+  font-size: 50px;
+  margin: auto;
+  top: 18%;
+  position: absolute;
+  right: 3%;
+}
+
+#angel-left {
+  position: absolute;
+  left: 3%;
+  top: 18%;
+  color: #fff;
+  font-size: 50px;
+}
+
 .container {
   width: 100%;
   max-width: 1140px;
@@ -33,6 +50,19 @@ a {
   margin-right: 45px;
   background-color: #00264F;
   border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+.header-link:hover {
+  background: none;
+  border: 2px solid #00264F;
+  border-radius: 50%;
+}
+
+.header-link:hover i {
+  color: #00264F;
 }
 
 .header-link.twitter {
@@ -81,7 +111,7 @@ a {
   display: none;
 }
 
-.header-bottom__left h3 {
+.header-bottom__left.navbarslar {
   display: none;
 }
 
@@ -146,6 +176,19 @@ a {
           justify-content: space-between;
 }
 
+.lorem-section-bloks .lorem-block {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.lorem-section-bloks .lorem-block:hover {
+  -webkit-box-shadow: 0 0 20px #b9b9b9;
+          box-shadow: 0 0 20px #b9b9b9;
+}
+
 .lorem-section-bloks .lorem-text {
   text-align: center;
   padding: 10px;
@@ -153,7 +196,7 @@ a {
 
 .lorem-section-bloks .lorem-title {
   text-align: center;
-  max-width: 320px;
+  max-width: 300px;
 }
 
 .lorem-section-bloks .lorem-img {
@@ -182,8 +225,9 @@ a {
 }
 
 .students .students-block .students-left .students-img {
-  max-width: 550px;
-  max-height: 550px;
+  max-width: 500px;
+  max-height: 500px;
+  margin-right: 20px;
 }
 
 .students .students-block .students-right .students-title {
@@ -207,6 +251,7 @@ a {
 .carousel {
   background: #004897;
   width: 100%;
+  position: relative;
 }
 
 .carousel h1 {
@@ -227,19 +272,20 @@ a {
 .carousel .section-carous {
   padding-top: 70px;
   padding-bottom: 141px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
 }
 
 .carousel .section-carous .block-carous {
   padding: 34px 40px 32px 32px;
   background-color: #fff;
   border-radius: 25px;
-  width: 30%;
+  margin-right: 10px !important;
+  margin-left: 10px !important;
 }
 
 .carousel .section-carous .block-carous .caraus-user {
@@ -314,6 +360,7 @@ a {
   margin-bottom: 8px;
   outline: none;
   display: block;
+  border-radius: 5px;
 }
 
 .section-form .input-mail {
@@ -323,6 +370,7 @@ a {
   margin-bottom: 8px;
   border: none;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .section-form .input-massage {
@@ -333,6 +381,27 @@ a {
   border: none;
   padding: 8px;
   display: block;
+  border-radius: 5px;
+}
+
+.section-form button {
+  padding: 10px 50px;
+  border: none;
+  outline: none;
+  background-color: #f95252;
+  margin-top: 8px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 900;
+  border: 2px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section-form button:hover {
+  background: none;
+  color: #f95252;
+  border: 2px solid #f95252;
 }
 
 .footer {
@@ -475,11 +544,24 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+  #angel-right {
+    display: none !important;
+  }
+  #angel-left {
+    display: none !important;
+  }
   #navbar {
     display: none;
   }
   .lorem-section-bloks {
     padding: 40px 15px;
+  }
+  .header-bottom__left.navbarslar {
+    display: none;
+  }
+  .header-bottom__left .header-bottom-link {
+    font-size: 17px;
+    padding: 15px 25px;
   }
   .lorem-block {
     max-width: 31%;
@@ -493,7 +575,9 @@ a {
     padding: 50px 50px 50px 50px;
   }
   .carousel .section-carous .block-carous {
-    max-width: 32%;
+    max-width: 45% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
     padding: 22px 25px 22px 22px;
   }
   .carousel .section-carous .block-carous h3 {
@@ -528,12 +612,31 @@ a {
   #navbar {
     display: none;
   }
+  .header-bottom__left.navbarslar {
+    display: none;
+  }
   .header-bottom__left .header-bottom-link {
-    font-size: 18px;
-    padding: 15px 30px;
+    font-size: 17px;
+    padding: 10px 18px;
   }
   .lorem-section-bloks {
     padding: 35px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .lorem-section-bloks .lorem-block {
+    max-width: 70%;
   }
   .students {
     padding: 25px 0 40px 0;
@@ -604,24 +707,28 @@ a {
   .header-top .header-right {
     display: none;
   }
-  .header-bottom {
+  .header-menu .header-bottom {
     padding: 10px 0;
   }
-  .header-bottom h3 {
-    display: block;
+  .header-menu .header-bottom h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-weight: 900;
     color: #fff;
     margin: 0;
     padding-left: 15px;
   }
+  .header-menu .header-bottom #hamburger {
+    display: block;
+  }
   .header-bottom__left {
     display: none;
-    -webkit-transition: ease-in-out 0.3s;
-    transition: ease-in-out 0.3s;
+  }
+  .header-bottom__left h3 {
+    display: block;
   }
   .header-bottom__left.active {
-    -webkit-transition: all ease 0.3s;
-    transition: all ease 0.3s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -633,6 +740,11 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start;
     position: relative;
+  }
+  .header-bottom__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .header-bottom__right a {
     display: inline-block;

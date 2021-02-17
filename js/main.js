@@ -1,4 +1,4 @@
-let navBar = document.querySelector('#navbar')
+let navBar = document.querySelector('.navbarslar')
 let hamBurger = document.querySelector('#hamburger')
 
 hamBurger.addEventListener('click', () => {
@@ -12,20 +12,37 @@ $('.responsive').slick({
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: $(`#angel-right`),
+    prevArrow: $(`#angel-left`),
     responsive: [{
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false,
+                nextArrow: $(`#angel-right`),
+                prevArrow: $(`#angel-left`),
+            }
+        },
+        {
+            breakpoint: 982,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                nextArrow: $(`#angel-right`),
+                prevArrow: $(`#angel-left`),
             }
         },
         {
             breakpoint: 600,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                nextArrow: $(`#angel-right`),
+                prevArrow: $(`#angel-left`),
             }
         },
         {
