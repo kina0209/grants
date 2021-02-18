@@ -5,6 +5,23 @@ hamBurger.addEventListener('click', () => {
     navBar.classList.toggle('active')
 })
 
+let dropDawn = document.querySelector('.dropdawn')
+let dropdawnMenu = document.querySelector('.dropdawn-menu')
+let dropDawnToggle = document.querySelector('#dropdawn')
+let dropDawns = document.querySelector('.dropdawns')
+console.log(dropDawnToggle)
+
+dropDawn.addEventListener('mouseover',  ()=>{
+    dropDawn.classList.add('active')
+})
+
+dropDawn.addEventListener('mouseleave',  ()=>{
+    dropDawn.classList.remove('active')
+})
+
+dropDawnToggle.addEventListener('click',() =>{
+    dropDawns.classList.toggle('active')
+})
 
 $('.responsive').slick({
     dots: false,
