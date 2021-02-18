@@ -633,6 +633,7 @@ a {
   }
   .lorem-section-bloks .lorem-block {
     max-width: 70%;
+    margin-bottom: 20px;
   }
   .students {
     padding: 25px 0 40px 0;
