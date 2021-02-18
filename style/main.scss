@@ -493,10 +493,6 @@ a {
           font-weight: 400;
           color: #fff;
           max-width: 75%;
-
-          a {
-            border-bottom: 1px solid rgb(114, 38, 150);
-          }
         }
       }
 
@@ -815,7 +811,7 @@ a {
     .container{
       .footer-top{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         padding: 35px 15px 0 15px ;
         &_block1{
