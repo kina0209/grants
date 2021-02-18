@@ -125,13 +125,32 @@
     }
 
     .blog-page-block{
-        max-width: 80%;
+        max-width: 300px;
         margin: 30px auto;
     }
-
     .blog-sections{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:640px){
+    .blog-page-block{
+        max-width: 250px;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width:576px){
+    .container{
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .blog-page-block{
+        max-width: 100%;
+        margin: 20px auto;
     }
 }
