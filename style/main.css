@@ -852,6 +852,7 @@ a {
             align-items: center;
   }
   .lorem-section-bloks .lorem-block {
+    max-width: 90%;
     margin-bottom: 25px;
   }
   .students {
