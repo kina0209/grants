@@ -382,11 +382,15 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  
   .section-form-input {
     display: flex;
     justify-content: center;
     align-items: center;
+    .form{
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .form-text-title {
