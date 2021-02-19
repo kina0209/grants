@@ -9,18 +9,28 @@ let dropDawn = document.querySelector('.dropdawn')
 let dropdawnMenu = document.querySelector('.dropdawn-menu')
 let dropDawnToggle = document.querySelector('#dropdawn')
 let dropDawns = document.querySelector('.dropdawns')
-console.log(dropDawnToggle)
 
-dropDawn.addEventListener('mouseover',  ()=>{
+dropDawn.addEventListener('mouseover', () => {
     dropDawn.classList.add('active')
 })
 
-dropDawn.addEventListener('mouseleave',  ()=>{
+dropDawn.addEventListener('mouseleave', () => {
     dropDawn.classList.remove('active')
 })
 
-dropDawnToggle.addEventListener('click',() =>{
+dropDawnToggle.addEventListener('click', () => {
     dropDawns.classList.toggle('active')
+})
+
+
+var mybutton = document.querySelector("#backToTop");
+
+window.addEventListener('scroll', ()=>{
+    if(window.pageYOffset > 200){
+        mybutton.style.display = 'block'
+    }else{
+        mybutton.style.display = 'none'
+    }
 })
 
 $('.responsive').slick({

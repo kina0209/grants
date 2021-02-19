@@ -15,8 +15,8 @@ a {
 
 #backToTop {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   font-size: 20px;
   color: #fff;
   background-color: #F95252;
@@ -25,11 +25,12 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: 2px solid transparent;
+  display: none;
 }
 
 #backToTop:hover {
-  color: #F95252;
-  border: 2px solid #F95252;
+  color: #000;
+  border: 2px solid #000;
   background-color: transparent;
 }
 
