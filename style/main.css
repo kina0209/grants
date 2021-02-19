@@ -381,19 +381,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .carousel .section-carous .block-carous .caous-img {
   background: #C4C4C4;
   padding: 20px;
   border-radius: 50%;
-}
-
-.carousel .section-carous .block-carous .caraous-text {
-  margin-bottom: 19px;
+  margin-right: 30px;
 }
 
 .section-form {
@@ -769,7 +763,7 @@ a {
     padding: 10px;
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .section-form {
     padding: 40px 100px;
