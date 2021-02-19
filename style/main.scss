@@ -10,6 +10,25 @@ a {
 }
 
 
+#backToTop{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #F95252;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+#backToTop:hover{
+  color: #F95252;
+  border: 2px solid #F95252;
+  background-color: transparent;
+}
+
 #angel-right{
   color: #fff;
   font-size: 50px;
