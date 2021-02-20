@@ -1,0 +1,31 @@
+.country-block-img {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.country {
+    width: 100%;
+    background-color: rgb(1, 2, 19);
+}
+
+.country-section-header {
+    line-height: 25px;
+    font-size: 30px;
+    color: rgb(22, 144, 160);
+    text-align: center;
+    transition: all ease 0.5s;
+    margin-bottom: 40px;
+}
+
+.country-section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.country-block-text {
+    margin: 0;
+    color: white;
+    opacity: 0.8;
+    padding: 30px;
+}

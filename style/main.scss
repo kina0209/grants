@@ -490,9 +490,6 @@ a {
                 padding: 10px 10px;
                 background-color: #fff;
                 transition: 0.3s;
-                &.face{
-                  // background-color: red;
-                }
                 &:hover {
                   background-color: #f95252;
 
@@ -701,7 +698,7 @@ a {
     align-items: center;
     flex-direction: column;
     .lorem-block{
-      max-width: 70%;
+      max-width: 90%;
       margin-bottom: 20px;
     }
   }
