@@ -25,6 +25,50 @@
     color: white;
     margin-bottom: 40px;
 }
+.map-block-left .bottom ul li{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+.map-block-left .bottom ul li p{
+    margin: 0;
+    color: #fff;
+}
+
+
+.map-block-left .bottom ul{
+    padding: 0;
+}
+
+.map-block-left .bottom ul li a i{
+    padding: 10px;
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.map-block-left .bottom ul li a i.fa-facebook-f{
+    padding: 11px 14px;
+    background-color: #fff;
+}
+
+.map-block-left .bottom ul li a i.fa-telegram-plane{
+    padding: 10px 12px;
+    background-color: #fff;
+}
+
+.map-block-left .bottom ul li a i.fa-instagram{
+    padding: 10px 12px;
+    background-color: #fff;
+}
+
+.map-block-left .bottom ul li a i.fa-envelope{
+    padding: 10px 11px;
+    background-color: #fff;
+}   
 .map-block-right{
     width: 50%;
     min-height: 100%;

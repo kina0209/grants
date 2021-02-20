@@ -145,6 +145,9 @@ nav ul li a{
         display: flex;
         justify-content: space-around;
     }
+    .blog-page-button{
+        padding: 10px 20px;
+    }
 }
 
 @media screen and (max-width:640px){
@@ -165,5 +168,10 @@ nav ul li a{
     .blog-page-block{
         max-width: 100%;
         margin: 20px auto;
+    }
+
+    .blog-page-button{
+        padding: 8px 17px;
+        font-size: 13px;
     }
 }
