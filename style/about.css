@@ -43,6 +43,7 @@
         max-width: 90%;
         text-align: center;
         margin:  0  auto 40px auto;
+        padding: 0;
     }
 
     .students .students-block .students-right .students-title{
@@ -60,5 +61,9 @@
     .lorem-sections-bloks .lorem-block{
         max-width: 90%;
         background-color: red;
+    }
+
+    .students .students-block .students-right .students-text{
+        padding: 0;
     }
 }
