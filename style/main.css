@@ -630,6 +630,12 @@ a {
 .footer .footer-bottom {
   background-color: #838383;
   padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .footer-bottom.container {
