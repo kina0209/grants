@@ -25,10 +25,10 @@ dropDawnToggle.addEventListener('click', () => {
 
 var mybutton = document.querySelector("#backToTop");
 
-window.addEventListener('scroll', ()=>{
-    if(window.pageYOffset > 200){
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 200) {
         mybutton.style.display = 'block'
-    }else{
+    } else {
         mybutton.style.display = 'none'
     }
 })
@@ -41,6 +41,8 @@ $('.responsive').slick({
     slidesToScroll: 1,
     nextArrow: $(`#angel-right`),
     prevArrow: $(`#angel-left`),
+    autoplay: true,
+    autoplaySpeed: 7000,
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -66,7 +68,7 @@ $('.responsive').slick({
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 2,
                 nextArrow: $(`#angel-right`),
                 prevArrow: $(`#angel-left`),
@@ -84,3 +86,27 @@ $('.responsive').slick({
         // instead of a settings object
     ]
 });
+
+
+$('.carousel-inner').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: 'linear',
+    nextArrow: $(`#right-side`),
+    prevArrow: $(`#left-side`),
+});
+
+let langBlok = document.querySelector('.lang-blok')
+let langMenu = document.querySelector('.lang-menu')
+
+langBlok.addEventListener('mouseover', ()=>{
+    langMenu.classList.add('actives')
+})
+
+langBlok.addEventListener('mouseleave', ()=>{
+    langMenu.classList.remove('actives')
+})

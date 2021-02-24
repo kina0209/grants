@@ -3,7 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 100px auto;
+    margin-top: 100px;
 }
 
 .country-block{
@@ -31,25 +31,42 @@
 }
 
 .study-info a h1{
-    font-size: 28px;
+    padding-bottom: 15px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
 
 .study-info a h1:hover{
     color: crimson;
+}
+
+.study-info p{
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
 }   
 
 
-
-nav ul li{
-    margin: 0 5px;
-    outline: none !important;
-    border: 2px solid#6ba6ff;
+nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.pagination{
+    display: flex;
 }
 
-nav ul li a{
-    padding: 5px 15px !important;
+.pagination .page-item{
+    padding: 10px 15px;
+    display: block;
+    margin: 0 10px;
+    border: 2px solid blue;
+}
+
+.pagination .page-item .page-link{
+    font-size: 20px;
 }
 
 

@@ -83,15 +83,27 @@
 
         /*/   Pagination /*/
 
-nav ul li{
-    margin: 0 5px;
-    outline: none !important;
-    border: 2px solid#6ba6ff;
-}
 
-nav ul li a{
-    padding: 5px 15px !important;
-}
+        nav{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            margin-top: 30px;
+        }
+        .pagination{
+            display: flex;
+        }
+        
+        .pagination .page-item{
+            padding: 10px 15px;
+            display: block;
+            margin: 0 10px;
+            border: 2px solid blue;
+        }
+        
+        .pagination .page-item .page-link{
+            font-size: 20px;
+        }
 
 
         @media screen and (max-width:1024px){

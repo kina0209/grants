@@ -11,9 +11,10 @@
 }
 
 .block h4{
+    font-weight: 400;
     font-size: 20px;
     padding: 20px 0 10px 0;
-    color: rgb(26, 54, 114);
+    color: black;
 }
 
 .block{
@@ -34,8 +35,9 @@ section{
     text-align: center;
     padding-bottom: 40px;
     padding-top: 20px;
-    color:  #f95252;
+    color:  blue;
     font-weight: 500;
+    font-size: 40px;
 }
 
 .viza{
