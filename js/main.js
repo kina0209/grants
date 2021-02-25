@@ -110,3 +110,7 @@ langBlok.addEventListener('mouseover', ()=>{
 langBlok.addEventListener('mouseleave', ()=>{
     langMenu.classList.remove('actives')
 })
+
+langBlok.addEventListener('click', ()=>{
+    langMenu.classList.toggle('actives')
+})
