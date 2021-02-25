@@ -94,6 +94,7 @@ iframe{
     }
 }
 
+
 @media screen and (max-width:768px){
     .container{
         max-width: 740px;
@@ -116,5 +117,34 @@ iframe{
 
     .map-block-right{
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width:576px){
+    .container{
+        max-width: 540px;
+        margin:  0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .map-block{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 15px;
+    }
+
+
+    .map-block-right{
+        width: 100%;
+    }
+
+
+    .map-block-left{
+        width: 100%;
+        box-sizing: border-box;
     }
 }
